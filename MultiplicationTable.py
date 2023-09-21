@@ -1,11 +1,5 @@
-multiplier = int(input("Multiplication Table of Which Number?: "))
+def table(multiplier, length):
+    for i in range(length): 
+        print(str(multiplier) + " * " + str(i + 1) + " = " + str(multiplier * (i + 1)))
 
-
-def tableLength(length):
-    x = 0
-    while x <= length:
-        print(str(multiplier) + " * " + str(x) + " = " + str(multiplier * x))
-        x = x + 1
-
-
-tableLength(int(input("Length of Table: ")))
+table(int(input("Table of: ")), int(input("Upto: ")))
